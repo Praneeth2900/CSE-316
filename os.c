@@ -61,13 +61,6 @@ int main()
   }
     printf("\t\t\t---------------------------------------\n");
 
-
-/*Arranging the table according to Burst time,
-Execution time and Arrival Time
-Arrival time <= Execution time
-*/
-
-
   long int k = 1;
   double b_time = 0;
   for(j=0;j<n;j++)
@@ -118,13 +111,6 @@ printf("\n\n\t\t\t -------------- The Values are --------------\n\n");
     printf("\t\t\t|  P[%0.0lf]   |       %0.0lf      |     %0.0lf      |        %0.0lf       |         %0.0lf          |\n",process[i],arrivalTime[i],burstTime[i],waitingTime[i],turnaroundTime[i]);
   }
     printf("\t\t\t-----------------------------------------------------------------------------\n");
-
-
-
-  /*Now we have to prioritize the processes according to the formulae
-      Priority = 1+ Waiting time / Estimated run time
-  */
- 
   
   completionTime[0] = burstTime[0];
   for(i=1;i<n;i++)
@@ -152,4 +138,3 @@ printf("\n\n\t\t\t -------------- The Values are --------------\n\n");
   getch();
   return 0;
 }
-
